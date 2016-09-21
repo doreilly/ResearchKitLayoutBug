@@ -12,6 +12,7 @@
 		105683711D92FECA00A1F694 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1056836F1D92FECA00A1F694 /* Main.storyboard */; };
 		105683731D92FECA00A1F694 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 105683721D92FECA00A1F694 /* Assets.xcassets */; };
 		105683761D92FECA00A1F694 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 105683741D92FECA00A1F694 /* LaunchScreen.storyboard */; };
+		105683891D9301A100A1F694 /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 105683881D9301A100A1F694 /* ResearchKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		105683721D92FECA00A1F694 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		105683751D92FECA00A1F694 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		105683771D92FECA00A1F694 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		105683881D9301A100A1F694 /* ResearchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ResearchKit.framework; path = "../../../Library/Developer/Xcode/DerivedData/RKiOS10RenderBug-amstxgndbdblozdtncfzpqtlnvrr/Build/Products/Debug-iphonesimulator/ResearchKit.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				105683891D9301A100A1F694 /* ResearchKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,7 @@
 			children = (
 				1056836A1D92FECA00A1F694 /* RKiOS10RenderBug */,
 				105683691D92FECA00A1F694 /* Products */,
+				105683871D9301A100A1F694 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +66,14 @@
 				105683771D92FECA00A1F694 /* Info.plist */,
 			);
 			path = RKiOS10RenderBug;
+			sourceTree = "<group>";
+		};
+		105683871D9301A100A1F694 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				105683881D9301A100A1F694 /* ResearchKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,8 +108,7 @@
 				TargetAttributes = {
 					105683671D92FECA00A1F694 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = USBZDQ9RH3;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -259,12 +270,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = USBZDQ9RH3;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = RKiOS10RenderBug/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.umich.chcr.RKiOS10RenderBug;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -272,12 +284,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = USBZDQ9RH3;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = RKiOS10RenderBug/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.umich.chcr.RKiOS10RenderBug;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -300,6 +313,7 @@
 				1056837C1D92FECA00A1F694 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
